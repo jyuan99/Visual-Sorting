@@ -72,13 +72,13 @@ void drawNums() {
     rect(0, i * 30, cheesesticks[i] * 3, 25, 8);
   }
   
-  fill(0, 255, 0);
-  rect(cheesesticks.length * 30 - 100, 100, 75, 35, 5);
-  fill(0);
-  text("Reset", cheesesticks.length * 30 - 77, 122);
-  
-  fill(255, 0, 0);
-  rect(cheesesticks.length * 30 - 100, 150, 75, 35, 5);
-  fill(0);
-  text("Pause", cheesesticks.length * 30 - 78, 173);
+//  fill(0, 255, 0);
+//  rect(cheesesticks.length * 30 - 100, 100, 75, 35, 5);
+//  fill(0);
+//  text("Reset", cheesesticks.length * 30 - 77, 122);
+//  
+//  fill(255, 0, 0);
+//  rect(cheesesticks.length * 30 - 100, 150, 75, 35, 5);
+//  fill(0);
+//  text("Pause", cheesesticks.length * 30 - 78, 173);
 }
