@@ -15,37 +15,39 @@ void setup() {
 }
 
 void draw() {
+  drawNums();
+//  if (mouseX > cheesesticks.length * 30 - 100 && mouseX < cheesesticks.length * 30 - 25 && mouseY > 100 && mouseY < 135){
+//    fill(0, 0, 200);
+//    rect(cheesesticks.length * 30 - 100, 100, 75, 35, 5);
+//    fill(255);
+//    text("Reset", cheesesticks.length * 30 - 77, 122);
+//    if (mousePressed){
+//    }
+//  }
+//  if (mouseX > cheesesticks.length * 30 - 100 && mouseX < cheesesticks.length * 30 - 25 && mouseY > 150 && mouseY < 185){
+//    fill(0, 0, 200);
+//    rect(cheesesticks.length * 30 - 100, 150, 75, 35, 5);
+//    fill(255);
+//    text("Pause", cheesesticks.length * 30 - 78, 173);
+//    if (mousePressed){
+//      pause = true;
+//      fill(255, 0, 0);
+//      rect(cheesesticks.length * 30 - 100, 200, 75, 35, 5);
+//      fill(0);
+//      text("Resume", cheesesticks.length * 30 - 82, 223);
+//      if (mouseX > cheesesticks.length * 30 - 100 && mouseX < cheesesticks.length * 30 - 25 && mouseY > 200 && mouseY < 235){
+//        fill(0, 0, 200);
+//        rect(cheesesticks.length * 30 - 100, 200, 75, 35, 5);
+//        fill(255);
+//        text("Resume", cheesesticks.length * 30 - 82, 173);
+//        if (mousePressed) {
+//          pause = false;
+//        }
+//      }
+//    }
+//  }
+  
   if (!pause){
-    drawNums();
-    if (mouseX > cheesesticks.length * 30 - 100 && mouseX < cheesesticks.length * 30 - 25 && mouseY > 100 && mouseY < 135){
-      fill(0, 0, 200);
-      rect(cheesesticks.length * 30 - 100, 100, 75, 35, 5);
-      fill(255);
-      text("Reset", cheesesticks.length * 30 - 77, 122);
-      if (mousePressed){
-      }
-    }
-    if (mouseX > cheesesticks.length * 30 - 100 && mouseX < cheesesticks.length * 30 - 25 && mouseY > 150 && mouseY < 185){
-      fill(0, 0, 200);
-      rect(cheesesticks.length * 30 - 100, 150, 75, 35, 5);
-      fill(255);
-      text("Pause", cheesesticks.length * 30 - 78, 173);
-      if (mousePressed){
-        pause = true;
-        if (mouseX > cheesesticks.length * 30 - 100 && mouseX < cheesesticks.length * 30 - 25 && mouseY > 150 && mouseY < 185){
-          fill(0, 0, 200);
-          rect(cheesesticks.length * 30 - 100, 150, 75, 35, 5);
-          fill(255);
-          text("Pause", cheesesticks.length * 30 - 78, 173);
-          delay(30);
-          if (mousePressed) {
-            print("true");
-            pause = false;
-          }
-        }
-      }
-    }
-    
     if (iter == (max)){
       iter = 0;
       max--;
